@@ -5,16 +5,16 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
 
-      {/* DECORATIVE BACKGROUND ELEMENTS */}
-      <View style={[styles.bgCircle, { top: -80, left: -60, backgroundColor: '#38bdf815' }]} />
-      <View style={[styles.bgCircle, { bottom: -100, right: -60, backgroundColor: '#818cf810' }]} />
+      {/* DECORATIVE BACKGROUND ELEMENTS - Sekarang warna Ungu */}
+      <View style={[styles.bgCircle, { top: -80, left: -60, backgroundColor: '#a855f715' }]} />
+      <View style={[styles.bgCircle, { bottom: -100, right: -60, backgroundColor: '#6366f110' }]} />
 
       <View style={styles.cardContainer}>
-        {/* AVATAR SECTION WITH GLOW */}
+        {/* AVATAR SECTION WITH PURPLE GLOW */}
         <View style={styles.imageOuterRing}>
           <View style={styles.imageInnerRing}>
             <Image 
-              source={{ uri: "https://raw.githubusercontent.com/trisasiregar01-arch/test/refs/heads/main/download%20(2).jpg" }} 
+              source={{ uri: "https://github.com/trisasiregar01-arch/test/blob/main/pfp%20viona.jpg?raw=true" }} 
               style={styles.profilePic} 
             />
           </View>
@@ -23,14 +23,14 @@ export default function HomeScreen() {
         {/* IDENTITY SECTION */}
         <View style={styles.textCenter}>
           <Text style={styles.name}>Trisa Deanna Viona Siregar</Text>
-          <Text style={styles.nim}>ID: 243303621264</Text>
+          <Text style={styles.nim}>NIM: 243303621264</Text>
           
           <View style={styles.tagContainer}>
             <View style={styles.tag}>
               <Text style={styles.tagText}>Sistem Informasi</Text>
             </View>
-            <View style={[styles.tag, { backgroundColor: '#1e293b' }]}>
-              <Text style={styles.tagText}>Student</Text>
+            <View style={[styles.tag, { backgroundColor: '#1e1b4b' }]}>
+              <Text style={styles.tagText}>Mahasiswa</Text>
             </View>
           </View>
         </View>
@@ -41,7 +41,7 @@ export default function HomeScreen() {
         <View style={styles.quoteBox}>
           <Text style={styles.quoteIcon}>“</Text>
           <Text style={styles.bioText}>
-            My code doesn't always work, but when it does, I don't know why.
+            Gak perlu buru-buru pengen jadi masterpiece. Nikmati aja setiap brush stroke-nya, karena kepuasan asli itu ada di proses 'rendering' perjuangan kita.
           </Text>
           <Text style={[styles.quoteIcon, { textAlign: 'right', marginTop: -10 }]}>”</Text>
         </View>
@@ -49,7 +49,7 @@ export default function HomeScreen() {
       
       <View style={styles.footerContainer}>
         <Text style={styles.footerText}>Mobile Dev Project</Text>
-        <View style={styles.dot} />
+        <View style={[styles.dot, { backgroundColor: '#a855f7' }]} />
         <Text style={styles.footerText}>SDK 50</Text>
       </View>
     </View>
@@ -79,12 +79,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#1e293b',
-    // Shadow Mastery (iOS)
-    shadowColor: '#38bdf8',
+    // Shadow Mastery dengan bias Ungu
+    shadowColor: '#a855f7',
     shadowOffset: { width: 0, height: 20 },
     shadowOpacity: 0.15,
     shadowRadius: 30,
-    // Shadow Mastery (Android)
     elevation: 10,
   },
   imageOuterRing: {
@@ -92,7 +91,7 @@ const styles = StyleSheet.create({
     height: 160,
     borderRadius: 80,
     borderWidth: 1,
-    borderColor: '#38bdf850',
+    borderColor: '#a855f750',
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 20,
@@ -102,7 +101,7 @@ const styles = StyleSheet.create({
     height: 148,
     borderRadius: 74,
     borderWidth: 3,
-    borderColor: '#38bdf8',
+    borderColor: '#a855f7',
     padding: 4,
     backgroundColor: '#020617',
   },
@@ -125,7 +124,7 @@ const styles = StyleSheet.create({
   },
   nim: {
     fontSize: 14,
-    color: '#64748b',
+    color: '#94a3b8',
     fontWeight: '600',
     letterSpacing: 1.5,
     marginBottom: 15,
@@ -136,15 +135,15 @@ const styles = StyleSheet.create({
     marginBottom: 25,
   },
   tag: {
-    backgroundColor: '#38bdf815',
+    backgroundColor: '#a855f720',
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#38bdf840',
+    borderColor: '#a855f740',
   },
   tagText: {
-    color: '#38bdf8',
+    color: '#c084fc',
     fontSize: 11,
     fontWeight: 'bold',
     textTransform: 'uppercase',
@@ -161,7 +160,7 @@ const styles = StyleSheet.create({
   },
   quoteIcon: {
     fontSize: 40,
-    color: '#38bdf8',
+    color: '#a855f7',
     fontFamily: 'serif',
     height: 30,
     opacity: 0.6,
@@ -190,7 +189,6 @@ const styles = StyleSheet.create({
     width: 4,
     height: 4,
     borderRadius: 2,
-    backgroundColor: '#38bdf8',
     marginHorizontal: 10,
   }
 });
